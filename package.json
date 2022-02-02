@@ -1,0 +1,16 @@
+{
+  "name": "nuxt3-vuetify3-volar",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "node .output/server/index.mjs"
+  },
+  "devDependencies": {
+    "@vuetify/vite-plugin": "^1.0.0-alpha.10",
+    "nuxt3": "latest"
+  },
+  "dependencies": {
+    "vuetify": "^v3.0.0-alpha.12"
+  }
+}
