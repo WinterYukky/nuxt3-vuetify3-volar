@@ -1,16 +1,16 @@
 {
-  "name": "nuxt3-vuetify3-volar",
-  "license": "MIT",
+  "private": true,
   "scripts": {
-    "dev": "nuxi dev",
-    "build": "nuxi build",
-    "start": "node .output/server/index.mjs"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
   },
   "devDependencies": {
-    "@vuetify/vite-plugin": "^1.0.0-alpha.10",
-    "nuxt3": "^3.0.0-27396610.ed4f4f5"
+    "nuxt": "3.0.0-rc.3"
   },
   "dependencies": {
-    "vuetify": "^v3.0.0-alpha.12"
+    "sass": "^1.52.1",
+    "vuetify": "^3.0.0-beta.2"
   }
 }

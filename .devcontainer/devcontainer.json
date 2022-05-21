@@ -1,13 +1,13 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.194.0/containers/typescript-node
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.234.0/containers/javascript-node
 {
-  "name": "Nuxt3 & Vuetify3 & volar",
+  "name": "Node.js",
   "build": {
     "dockerfile": "Dockerfile",
-    // Update 'VARIANT' to pick a Node version: 12, 14, 16
-    "args": {
-      "VARIANT": "16"
-    }
+    // Update 'VARIANT' to pick a Node version: 18, 16, 14.
+    // Append -bullseye or -buster to pin to an OS version.
+    // Use -bullseye variants on local arm64/Apple Silicon.
+    "args": { "VARIANT": "18-bullseye" }
   },
 
   // Set *default* container specific settings.json values on container create.
@@ -23,7 +23,7 @@
   "extensions": [
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
-    "johnsoncodehk.volar"
+    "Vue.volar"
   ],
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
@@ -32,6 +32,6 @@
   // Use 'postCreateCommand' to run commands after the container is created.
   // "postCreateCommand": "yarn install",
 
-  // Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+  // Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
   "remoteUser": "node"
 }
